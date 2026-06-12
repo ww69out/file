@@ -1,0 +1,56 @@
+<html lang="id">
+<head>
+<meta name="robots" content="noindex, nofollow" />
+<meta name="referrer" content="no-referrer" />
+<style type="text/css">
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.blocked-message {
+    display: none;
+    font-size: 24px;
+    color: red;
+    margin-top: 20px;
+}
+</style>
+<script src="//ssl.p.jwpcdn.com/player/v/8.26.0/jwplayer.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/disable-devtool/disable-devtool.min.js"></script>
+<script>
+jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
+</script>
+</head>
+<body>
+<div id="player"></div>
+<script type="text/javascript">
+var playerInstance = jwplayer("player");
+
+playerInstance.setup({
+    playlist: [{
+        "sources": [
+            {
+                "default": false,
+                "type": "dash",
+                "file": "https://live-oneapp-prd-news.akamaized.net/Content/CMAF_OL2-CTR-4s-v2/Live/channel(telemundodeportes)/master.mpd",
+                "drm": {
+                    "clearkey": { 
+                        "keyId": "300b58dfdaf35e8537ce25c39e99aec7", 
+                        "key": "6fc107a6f62f39da27b36ff079d7f937" 
+                    }
+                },
+                "label": "0"
+            }
+        ]
+    }],
+    width: "100%",
+    height: "100%",
+    autostart: true,
+    cast: {},
+    stretching: "exactfit",
+    sharing: false
+});
+</script>
+</body>
+</html>
